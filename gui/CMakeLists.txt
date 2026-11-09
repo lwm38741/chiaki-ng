@@ -7,7 +7,7 @@ if(APPLE)
 	enable_language(OBJCXX)
 endif()
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Concurrent Svg Qml Quick Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Concurrent Svg Qml Quick Widgets LinguistTools)
 if(Qt6_VERSION VERSION_GREATER_EQUAL "6.10.0")
 	find_package(Qt6 REQUIRED COMPONENTS GuiPrivate)
 endif()
@@ -22,6 +22,8 @@ endif()
 set(SOURCE_FILES
 	include/exception.h
 	src/main.cpp
+	include/guitranslator.h
+	src/guitranslator.cpp
 	include/discoverymanager.h
 	src/discoverymanager.cpp
 	include/streamsession.h
@@ -159,3 +161,21 @@ install(TARGETS chiaki
 install(FILES chiaking.desktop DESTINATION share/applications)
 install(FILES chiaking.png DESTINATION share/icons/hicolor/512x512/apps)
 install(FILES io.github.streetpea.Chiaki4deck.appdata.xml DESTINATION share/metainfo)
+
+# Compile the catalog and embed it so portable deployment cannot lose the application language.
+qt_add_lrelease(
+    TS_FILES translations/chiaki_zh_CN.ts
+    QM_FILES_OUTPUT_VARIABLE chiaki_qm_files)
+qt_add_resources(chiaki "chiaki_translations"
+    PREFIX "/i18n" BASE "${CMAKE_CURRENT_BINARY_DIR}"
+    FILES ${chiaki_qm_files})
+
+if(CHIAKI_ENABLE_TESTS)
+    add_executable(chiaki-translation-test ../test/translation.cpp src/guitranslator.cpp)
+    target_include_directories(chiaki-translation-test PRIVATE include)
+    target_link_libraries(chiaki-translation-test PRIVATE Qt::Core)
+    qt_add_resources(chiaki-translation-test "chiaki_translations_test"
+        PREFIX "/i18n" BASE "${CMAKE_CURRENT_BINARY_DIR}"
+        FILES ${chiaki_qm_files})
+    add_test(NAME gui-translation COMMAND chiaki-translation-test)
+endif()

@@ -107,6 +107,7 @@ private:
 
 class StatsOverlayWidget : public QWidget
 {
+    Q_DECLARE_TR_FUNCTIONS(StatsOverlayWidget)
 public:
     StatsOverlayWidget(QmlMainWindow *owner, QmlBackend *backend)
         : QWidget(nullptr)

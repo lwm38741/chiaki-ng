@@ -1921,7 +1921,7 @@ DialogView {
                             clip: true
                             model: Chiaki.settings.registeredHosts
                             delegate: ItemDelegate {
-                                text: "%1 (%2, %3)".arg(Chiaki.settings.streamerMode ? "hidden" : modelData.mac).arg(modelData.ps5 ? "PS5" : "PS4").arg(modelData.name)
+                                text: "%1 (%2, %3)".arg(Chiaki.settings.streamerMode ? qsTr("hidden") : modelData.mac).arg(modelData.ps5 ? "PS5" : "PS4").arg(modelData.name)
                                 height: 80
                                 width: parent ? parent.width : 0
                                 leftPadding: autoConnectButton.width + 40
@@ -2113,7 +2113,7 @@ DialogView {
                             }
                             model: Chiaki.hiddenHosts
                             delegate: ItemDelegate {
-                                text: "%1 (%2)".arg(Chiaki.settings.streamerMode ? "hidden" : modelData.mac).arg(modelData.name)
+                                text: "%1 (%2)".arg(Chiaki.settings.streamerMode ? qsTr("hidden") : modelData.mac).arg(modelData.name)
                                 height: 80
                                 width: parent ? parent.width : 0
 
@@ -2216,7 +2216,7 @@ DialogView {
 
                         Button {
                             id: resetAllKeys
-                            text: "Reset All Keys"
+                            text: qsTr("Reset All Keys")
                             Layout.alignment: Qt.AlignRight
                             property bool firstInFocusChain: true
                             property bool lastInFocusChain: false
@@ -2550,7 +2550,7 @@ DialogView {
                             Layout.alignment: Qt.AlignHCenter
                             id: controllerMappingChange
                             firstInFocusChain: true
-                            text: "Change Controller Mapping"
+                            text: qsTr("Change Controller Mapping")
                             onClicked: controllerMappingDialog.show({
                                 reset: false
                             });
@@ -2558,7 +2558,7 @@ DialogView {
                         C.Button {
                             Layout.alignment: Qt.AlignHCenter
                             id: controllerMappingReset
-                            text: "Reset Controller Mapping"
+                            text: qsTr("Reset Controller Mapping")
                             onClicked: controllerMappingDialog.show({
                                 reset: true
                             });
@@ -3136,7 +3136,7 @@ DialogView {
                     Layout.preferredWidth: 400
                     verticalAlignment: Text.AlignTop
                     wrapMode: Text.Wrap
-                    text: "<h1>chiaki-ng</h1> by Street Pea, version %1
+                    text: qsTr("<h1>chiaki-ng</h1> by Street Pea, version %1
                         <h2>Fork of Chiaki</h2> by Florian Markl at version 2.1.1
 
                         <p>This program is free software: you can redistribute it and/or modify
@@ -3146,7 +3146,7 @@ DialogView {
                         <p>This program is distributed in the hope that it will be useful,
                         but WITHOUT ANY WARRANTY; without even the implied warranty of
                         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-                        GNU General Public License for more details.</p>".arg(Qt.application.version)
+                        GNU General Public License for more details.</p>").arg(Qt.application.version)
                 }
             }
         }

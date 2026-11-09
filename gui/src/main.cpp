@@ -20,6 +20,7 @@ int main(int argc, char *argv[]) { return real_main(argc, argv); }
 #include <discoverymanager.h>
 #include <qmlmainwindow.h>
 #include <QApplication>
+#include <guitranslator.h>
 #include <QtTypes>
 
 #ifdef CHIAKI_ENABLE_CLI
@@ -195,7 +196,16 @@ int real_main(int argc, char *argv[])
 	QCommandLineOption opengl_option("opengl", "Switch the renderer to OpenGL from now on, for systems where Vulkan shows a blank window or crashes (switch back under Settings > Video > Renderer Backend).");
 	parser.addOption(opengl_option);
 
+	QCommandLineOption language_option("language", "Interface language: zh_CN (default) or en.", "language", "zh_CN");
+	parser.addOption(language_option);
+
 	parser.process(app);
+	GuiTranslator translations;
+	if(!translations.Install(app, parser.value(language_option)))
+	{
+		fprintf(stderr, "Could not load interface language. Use --language zh_CN or --language en.\n");
+		return 1;
+	}
 	QStringList args = parser.positionalArguments();
 
 	Settings settings(parser.isSet(profile_option) ? parser.value(profile_option) : QString());
