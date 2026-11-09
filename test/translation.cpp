@@ -15,7 +15,7 @@ int main(int argc, char **argv)
     QSettings::setDefaultFormat(QSettings::IniFormat);
     QSettings::setPath(QSettings::IniFormat, QSettings::UserScope, directory.path());
     {
-        Settings original;
+        Settings original(QString{});
         original.SetControllerButtonMapping(CHIAKI_CONTROLLER_BUTTON_CROSS, Qt::Key_X);
     }
     {
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
         if(QCoreApplication::translate("RegistDialog", "Register") != QString::fromUtf8("注册")) return 3;
         if(app.arguments().contains("--require-qt-translations") &&
             QCoreApplication::translate("QPlatformTheme", "Cancel") != QString::fromUtf8("取消")) return 17;
-        Settings chinese;
+        Settings chinese(QString{});
         if(chinese.GetControllerMapping().value(CHIAKI_CONTROLLER_BUTTON_CROSS) != Qt::Key_X) return 11;
         chinese.SetControllerButtonMapping(CHIAKI_CONTROLLER_BUTTON_CROSS, Qt::Key_Y);
         QSettings stored("ChiakiTranslationTest", "KeyMappingTest");
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
         GuiTranslator translator;
         if(!translator.Install(app, "en")) return 5;
         if(QCoreApplication::translate("QPlatformTheme", "Cancel") != QStringLiteral("Cancel")) return 18;
-        Settings english;
+        Settings english(QString{});
         if(english.GetControllerMapping().value(CHIAKI_CONTROLLER_BUTTON_CROSS) != Qt::Key_Y) return 14;
         if(QCoreApplication::translate("SettingsDialog", "Settings") != QStringLiteral("Settings")) return 6;
     }
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
     {
         GuiTranslator translator;
         if(!translator.Install(app)) return 15;
-        Settings chinese;
+        Settings chinese(QString{});
         chinese.ClearKeyMapping();
         QSettings stored("ChiakiTranslationTest", "KeyMappingTest");
         if(stored.contains("keymap/cross")) return 16;
