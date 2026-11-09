@@ -171,9 +171,9 @@ qt_add_resources(chiaki "chiaki_translations"
     FILES ${chiaki_qm_files})
 
 if(CHIAKI_ENABLE_TESTS)
-    add_executable(chiaki-translation-test ../test/translation.cpp src/guitranslator.cpp)
+    add_executable(chiaki-translation-test ../test/translation.cpp src/guitranslator.cpp src/settings.cpp src/host.cpp include/settings.h)
     target_include_directories(chiaki-translation-test PRIVATE include)
-    target_link_libraries(chiaki-translation-test PRIVATE Qt::Core)
+    target_link_libraries(chiaki-translation-test PRIVATE Qt::Core Qt::Gui SDL2::SDL2 chiaki-lib)
     qt_add_resources(chiaki-translation-test "chiaki_translations_test"
         PREFIX "/i18n" BASE "${CMAKE_CURRENT_BINARY_DIR}"
         FILES ${chiaki_qm_files})

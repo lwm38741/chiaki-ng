@@ -104,7 +104,11 @@ jobs:
           cmake --build build --config Release --clean-first --target chiaki chiaki-unit chiaki-translation-test
           
       - name: Run unit and translation tests
-        run: ctest --test-dir build --output-on-failure
+        run: |
+          ctest --test-dir build -N > test-list.txt
+          cat test-list.txt
+          grep -q 'gui-translation' test-list.txt
+          ctest --test-dir build --output-on-failure
 
       - name: Deploy chiaki-ng
         run: |
