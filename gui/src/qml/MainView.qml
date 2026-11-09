@@ -86,7 +86,8 @@ Pane {
 
             Button {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 100
+                Layout.preferredWidth: Math.min(100, consolePane.width * 0.09)
+                Layout.minimumWidth: 0
                 flat: true
                 text: "×"
                 font.pixelSize: 60
@@ -99,7 +100,8 @@ Pane {
 
             Button {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 350
+                Layout.preferredWidth: Math.min(350, consolePane.width * 0.27)
+                Layout.minimumWidth: 0
                 flat: true
                 text: qsTr("Create Steam Shortcut")
                 focusPolicy: Qt.NoFocus
@@ -121,7 +123,8 @@ Pane {
 
             Button {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 400
+                Layout.preferredWidth: Math.min(400, consolePane.width * 0.22)
+                Layout.minimumWidth: 0
                 flat: true
                 text: qsTr("Refresh PSN Hosts")
                 icon.source: "qrc:/icons/r1.svg"
@@ -133,7 +136,8 @@ Pane {
 
             Button {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 400
+                Layout.preferredWidth: Math.min(400, consolePane.width * 0.22)
+                Layout.minimumWidth: 0
                 flat: true
                 focusPolicy: Qt.NoFocus
                 Material.roundedScale: Material.SmallScale
@@ -142,7 +146,8 @@ Pane {
 
             Button {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 300
+                Layout.preferredWidth: Math.min(300, consolePane.width * 0.24)
+                Layout.minimumWidth: 0
                 flat: true
                 text: qsTr("Add Manual Host")
                 focusPolicy: Qt.NoFocus
@@ -164,7 +169,8 @@ Pane {
             Button {
                 id: settingsButton
                 Layout.fillHeight: true
-                Layout.preferredWidth: 100
+                Layout.preferredWidth: Math.min(100, consolePane.width * 0.09)
+                Layout.minimumWidth: 0
                 flat: true
                 icon.source: "qrc:/icons/settings-20px.svg";
                 icon.width: 50

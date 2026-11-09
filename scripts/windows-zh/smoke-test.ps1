@@ -60,6 +60,10 @@ foreach ($language in @('zh_CN', 'en')) {
                 Save-Window $p "$language-settings-$tab"
             }
         }
+        if ($language -eq 'zh_CN') {
+            $hashes = @(Get-ChildItem "$($evidence.FullName)/zh_CN-settings-*.png" | Get-FileHash | Select-Object -ExpandProperty Hash -Unique)
+            if ($hashes.Count -ne 9) { throw "Settings navigation failed: only $($hashes.Count) distinct tab screenshots" }
+        }
         $p.Refresh()
         if ($p.HasExited) { throw 'GUI exited during smoke test' }
         "PASS: $language portable GUI launched and remained running" | Tee-Object -FilePath "$($evidence.FullName)/result.txt" -Append
