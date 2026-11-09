@@ -118,8 +118,14 @@ jobs:
         run: |
           cp COPYING chiaki-ng-Win/
           cp -r LICENSES chiaki-ng-Win/
-          cp scripts/windows-zh/* chiaki-ng-Win/
+          cp scripts/windows-zh/Start-English.cmd scripts/windows-zh/README-*.txt chiaki-ng-Win/
           printf '%s\n' "${GITHUB_SHA}" > chiaki-ng-Win/SOURCE-COMMIT.txt
+
+      - name: Verify deployed application and Qt translations
+        run: |
+          cp build/gui/chiaki-translation-test.exe chiaki-ng-Win/
+          ./chiaki-ng-Win/chiaki-translation-test.exe --require-qt-translations
+          rm chiaki-ng-Win/chiaki-translation-test.exe
 
       - name: Software OpenGL for the headless CI runner
         uses: ssciwr/setup-mesa-dist-win@6657792673a5d162d5f244db991ba45b4b68989f
@@ -135,6 +141,7 @@ jobs:
           sha256sum "$RELEASE_PACKAGE_FILE" > SHA256SUMS.txt
 
       - name: Upload portable and validation evidence
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: chiaki-ng-win_x64-zh_CN-portable
@@ -143,5 +150,5 @@ jobs:
             SHA256SUMS.txt
             smoke-evidence/
             build/Testing/Temporary/LastTest.log
-          if-no-files-found: error
+          if-no-files-found: warn
           retention-days: 14

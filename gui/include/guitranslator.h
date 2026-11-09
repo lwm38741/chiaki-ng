@@ -11,6 +11,5 @@ public:
 
 private:
     QTranslator application;
-    QTranslator qtbase;
-    QTranslator qtdeclarative;
+    QTranslator qt;
 };

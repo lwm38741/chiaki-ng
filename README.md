@@ -1,3 +1,5 @@
+> **非官方 Windows x64 简体中文便携版**：[中文说明](README.zh-CN.md) · [中文版下载](https://github.com/lwm38741/chiaki-ng/releases/latest)。基于上游 v1.10.1，默认简体中文，支持英文启动。以下为上游原始项目说明。
+
 
 ![chiaki-ng Logo](gui/res/chiaking-logo.svg)
 

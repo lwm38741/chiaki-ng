@@ -9,10 +9,9 @@ bool GuiTranslator::Install(QCoreApplication &app, const QString &language)
         return false;
 
     const QString directory = QDir(QCoreApplication::applicationDirPath()).filePath("translations");
-    if(qtbase.load("qtbase_zh_CN", directory))
-        app.installTranslator(&qtbase);
-    if(qtdeclarative.load("qtdeclarative_zh_CN", directory))
-        app.installTranslator(&qtdeclarative);
+    // windeployqt merges the required Qt catalogs into this single file.
+    if(qt.load("qt_zh_CN", directory))
+        app.installTranslator(&qt);
 
     if(!application.load(QStringLiteral(":/i18n/chiaki_zh_CN.qm")))
         return false;

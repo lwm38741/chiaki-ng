@@ -421,127 +421,127 @@ This enables:
             <translation>确定要退出吗？</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="104" />
+            <location filename="../src/qml/MainView.qml" line="106" />
             <source>Create Steam Shortcut</source>
             <translation>创建 Steam 快捷方式</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="126" />
+            <location filename="../src/qml/MainView.qml" line="129" />
             <source>Refresh PSN Hosts</source>
             <translation>刷新 PSN 主机</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="147" />
+            <location filename="../src/qml/MainView.qml" line="152" />
             <source>Add Manual Host</source>
             <translation>手动添加主机</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="230" />
+            <location filename="../src/qml/MainView.qml" line="236" />
             <source>Delete Console</source>
             <translation>删除主机</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="230" />
+            <location filename="../src/qml/MainView.qml" line="236" />
             <source>Are you sure you want to delete this console?</source>
             <translation>确定要删除此主机吗？</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="233" />
+            <location filename="../src/qml/MainView.qml" line="239" />
             <source>Hide Console</source>
             <translation>隐藏主机</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="233" />
+            <location filename="../src/qml/MainView.qml" line="239" />
             <source>Are you sure you want to hide this console?</source>
             <translation>确定要隐藏此主机吗？</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="233" />
+            <location filename="../src/qml/MainView.qml" line="239" />
             <source>Note: You can unhide from the Consoles section of the Settings under Hidden Consoles</source>
             <translation>提示：可在“设置 &gt; 主机 &gt; 已隐藏的主机”中取消隐藏</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="266" />
+            <location filename="../src/qml/MainView.qml" line="272" />
             <source>Address: %1</source>
             <translation>地址：%1</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="268" />
+            <location filename="../src/qml/MainView.qml" line="274" />
             <source>ID: %1 (%2)</source>
             <translation>ID：%1 (%2)</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="268" />
+            <location filename="../src/qml/MainView.qml" line="274" />
             <source>hidden</source>
             <translation>已隐藏</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="268" />
+            <location filename="../src/qml/MainView.qml" line="274" />
             <source>registered</source>
             <translation>已注册</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="268" />
+            <location filename="../src/qml/MainView.qml" line="274" />
             <source>unregistered</source>
             <translation>未注册</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="272" />
+            <location filename="../src/qml/MainView.qml" line="278" />
             <source>Automatic Registration Available</source>
             <translation>可使用自动注册</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="274" />
+            <location filename="../src/qml/MainView.qml" line="280" />
             <source>Remote Connection via PSN</source>
             <translation>通过 PSN 远程连接</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="282" />
+            <location filename="../src/qml/MainView.qml" line="288" />
             <source>discovered + manual</source>
             <translation>自动发现 + 手动添加</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="284" />
+            <location filename="../src/qml/MainView.qml" line="290" />
             <source>discovered</source>
             <translation>已发现</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="287" />
+            <location filename="../src/qml/MainView.qml" line="293" />
             <source>manual</source>
             <translation>手动</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="299" />
+            <location filename="../src/qml/MainView.qml" line="305" />
             <source>State: %1</source>
             <translation>状态：%1</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="303" />
+            <location filename="../src/qml/MainView.qml" line="309" />
             <source>App: %1</source>
             <translation>应用：%1</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="305" />
+            <location filename="../src/qml/MainView.qml" line="311" />
             <source>Title ID: %1</source>
             <translation>游戏 ID：%1</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="318" />
+            <location filename="../src/qml/MainView.qml" line="324" />
             <source>Delete</source>
             <translation>删除</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="318" />
+            <location filename="../src/qml/MainView.qml" line="324" />
             <source>Hide</source>
             <translation>隐藏</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="343" />
+            <location filename="../src/qml/MainView.qml" line="349" />
             <source>Wake Up</source>
             <translation>唤醒</translation>
         </message>
         <message>
-            <location filename="../src/qml/MainView.qml" line="368" />
+            <location filename="../src/qml/MainView.qml" line="374" />
             <source>Update Console Pin</source>
             <translation>更新主机 PIN 码</translation>
         </message>
@@ -1973,33 +1973,33 @@ This enables:
     <context>
         <name>QmlMainWindow</name>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="4957" />
+            <location filename="../src/qmlmainwindow.cpp" line="4958" />
             <source>chiaki-ng closed while starting Vulkan last time, so it now uses OpenGL. You can switch back under Settings &gt; Video &gt; Renderer Backend.</source>
             <translation>chiaki-ng 上次在启动 Vulkan 时关闭，因此当前使用 OpenGL。您可以在“设置 &gt; 视频 &gt; 渲染后端”中切换回 Vulkan。</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="6008" />
-            <location filename="../src/qmlmainwindow.cpp" line="7015" />
+            <location filename="../src/qmlmainwindow.cpp" line="6009" />
+            <location filename="../src/qmlmainwindow.cpp" line="7016" />
             <source>Vulkan renderer stalled</source>
             <translation>Vulkan 渲染器停止响应</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="6009" />
+            <location filename="../src/qmlmainwindow.cpp" line="6010" />
             <source>The Vulkan surface could not recover. Chiaki-ng will relaunch with OpenGL for this run only.</source>
             <translation>Vulkan 表面无法恢复。Chiaki-ng 将重新启动，仅本次运行使用 OpenGL。</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="6010" />
+            <location filename="../src/qmlmainwindow.cpp" line="6011" />
             <source>Vulkan surface creation failed repeatedly while the window was visible. OpenGL is being used for this launch only.</source>
             <translation>窗口可见时，Vulkan 表面创建多次失败。本次启动将使用 OpenGL。</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="6406" />
+            <location filename="../src/qmlmainwindow.cpp" line="6407" />
             <source>Vulkan device lost</source>
             <translation>Vulkan 设备丢失</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="6407" />
+            <location filename="../src/qmlmainwindow.cpp" line="6408" />
             <source>The Vulkan renderer stopped responding. Chiaki-ng will relaunch with OpenGL for this run only.
 
 Reason: %1</source>
@@ -2008,17 +2008,17 @@ Reason: %1</source>
 原因：%1</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="6408" />
+            <location filename="../src/qmlmainwindow.cpp" line="6409" />
             <source>Vulkan device was lost. OpenGL is being used for this launch only. Reason: %1</source>
             <translation>Vulkan 设备已丢失。本次启动将使用 OpenGL。原因：%1</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="7016" />
+            <location filename="../src/qmlmainwindow.cpp" line="7017" />
             <source>The Vulkan swapchain could not recover. Chiaki-ng will relaunch with OpenGL for this run only.</source>
             <translation>Vulkan 交换链无法恢复。chiaki-ng 将重新启动，仅本次运行使用 OpenGL。</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="7017" />
+            <location filename="../src/qmlmainwindow.cpp" line="7018" />
             <source>Vulkan swapchain failed repeatedly while the window was visible. OpenGL is being used for this launch only.</source>
             <translation>窗口可见时 Vulkan 交换链反复失败。仅本次运行使用 OpenGL。</translation>
         </message>
@@ -2185,157 +2185,157 @@ This enables:
     <context>
         <name>Settings</name>
         <message>
-            <location filename="../src/settings.cpp" line="2365" />
+            <location filename="../src/settings.cpp" line="2366" />
             <source>Cross</source>
             <translation>叉键</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2366" />
+            <location filename="../src/settings.cpp" line="2367" />
             <source>Moon</source>
             <translation>圆圈键</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2367" />
+            <location filename="../src/settings.cpp" line="2368" />
             <source>Box</source>
             <translation>方块键</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2368" />
+            <location filename="../src/settings.cpp" line="2369" />
             <source>Pyramid</source>
             <translation>三角键</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2369" />
+            <location filename="../src/settings.cpp" line="2370" />
             <source>D-Pad Left</source>
             <translation>方向键左</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2370" />
+            <location filename="../src/settings.cpp" line="2371" />
             <source>D-Pad Right</source>
             <translation>方向键向右</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2371" />
+            <location filename="../src/settings.cpp" line="2372" />
             <source>D-Pad Up</source>
             <translation>方向键上</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2372" />
+            <location filename="../src/settings.cpp" line="2373" />
             <source>D-Pad Down</source>
             <translation>方向键下</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2373" />
+            <location filename="../src/settings.cpp" line="2374" />
             <source>L1</source>
             <translation>L1</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2374" />
+            <location filename="../src/settings.cpp" line="2375" />
             <source>R1</source>
             <translation>R1</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2375" />
+            <location filename="../src/settings.cpp" line="2376" />
             <source>L3</source>
             <translation>L3</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2376" />
+            <location filename="../src/settings.cpp" line="2377" />
             <source>R3</source>
             <translation>R3</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2377" />
+            <location filename="../src/settings.cpp" line="2378" />
             <source>Options</source>
             <translation>Options</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2378" />
+            <location filename="../src/settings.cpp" line="2379" />
             <source>Share</source>
             <translation>分享键</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2379" />
+            <location filename="../src/settings.cpp" line="2380" />
             <source>Touchpad</source>
             <translation>触摸板</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2380" />
+            <location filename="../src/settings.cpp" line="2381" />
             <source>PS</source>
             <translation>PS</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2381" />
+            <location filename="../src/settings.cpp" line="2382" />
             <source>L2</source>
             <translation>L2</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2382" />
+            <location filename="../src/settings.cpp" line="2383" />
             <source>R2</source>
             <translation>R2</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2383" />
+            <location filename="../src/settings.cpp" line="2384" />
             <source>Left Stick Right</source>
             <translation>左摇杆向右</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2384" />
+            <location filename="../src/settings.cpp" line="2385" />
             <source>Left Stick Up</source>
             <translation>左摇杆上</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2385" />
+            <location filename="../src/settings.cpp" line="2386" />
             <source>Right Stick Right</source>
             <translation>右摇杆向右</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2386" />
+            <location filename="../src/settings.cpp" line="2387" />
             <source>Right Stick Up</source>
             <translation>右摇杆向上</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2387" />
+            <location filename="../src/settings.cpp" line="2388" />
             <source>Left Stick Left</source>
             <translation>左摇杆左</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2388" />
+            <location filename="../src/settings.cpp" line="2389" />
             <source>Left Stick Down</source>
             <translation>左摇杆向下</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2389" />
+            <location filename="../src/settings.cpp" line="2390" />
             <source>Right Stick Left</source>
             <translation>右摇杆向左</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2390" />
+            <location filename="../src/settings.cpp" line="2391" />
             <source>Right Stick Down</source>
             <translation>右摇杆下</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2391" />
+            <location filename="../src/settings.cpp" line="2392" />
             <source>Left Stick X</source>
             <translation>左摇杆 X 轴</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2392" />
+            <location filename="../src/settings.cpp" line="2393" />
             <source>Left Stick Y</source>
             <translation>左摇杆 Y 轴</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2393" />
+            <location filename="../src/settings.cpp" line="2394" />
             <source>Right Stick X</source>
             <translation>右摇杆 X 轴</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2394" />
+            <location filename="../src/settings.cpp" line="2395" />
             <source>Right Stick Y</source>
             <translation>右摇杆 Y 轴</translation>
         </message>
         <message>
-            <location filename="../src/settings.cpp" line="2395" />
+            <location filename="../src/settings.cpp" line="2396" />
             <source>MIC</source>
             <translation>麦克风</translation>
         </message>
@@ -3580,37 +3580,37 @@ Please use Steam to map controller or disable Steam Input for the controller bef
     <context>
         <name>StatsOverlayWidget</name>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="170" />
+            <location filename="../src/qmlmainwindow.cpp" line="171" />
             <source>Mbps</source>
             <translation>Mbps</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="171" />
+            <location filename="../src/qmlmainwindow.cpp" line="172" />
             <source>queue depth avg</source>
             <translation>平均队列深度</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="172" />
+            <location filename="../src/qmlmainwindow.cpp" line="173" />
             <source>pending frame age</source>
             <translation>待处理帧等待时长</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="173" />
+            <location filename="../src/qmlmainwindow.cpp" line="174" />
             <source>packet loss</source>
             <translation>丢包</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="174" />
+            <location filename="../src/qmlmainwindow.cpp" line="175" />
             <source>dropped frames</source>
             <translation>丢帧数</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="175" />
+            <location filename="../src/qmlmainwindow.cpp" line="176" />
             <source>lost frames</source>
             <translation>丢失帧数</translation>
         </message>
         <message>
-            <location filename="../src/qmlmainwindow.cpp" line="256" />
+            <location filename="../src/qmlmainwindow.cpp" line="257" />
             <source>%1 ms</source>
             <translation>%1 毫秒</translation>
         </message>
