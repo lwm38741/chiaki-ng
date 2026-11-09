@@ -20,13 +20,21 @@
 - No PS4/PS5 hardware available; disclose untested pairing/streaming.
 
 ### Task 1: Complete catalog and load translations
-- [ ] Create test/translation.cpp to exercise Chinese loading and English fallback, integrate test target and watch failure without catalog/loader.
-- [ ] Add gui/include/guitranslator.h and gui/src/guitranslator.cpp, install after CLI parsing; add --language option.
-- [ ] Translate TS catalog, wrap missing QML visible strings and validate tokens with scripts/check-translations.py.
-- [ ] Build Qt QM and run validation, including real QTranslator lookup.
+- [x] Create test/translation.cpp to exercise Chinese loading and English fallback, integrate test target and watch failure without catalog/loader.
+- [x] Add gui/include/guitranslator.h and gui/src/guitranslator.cpp, install after CLI parsing; add --language option.
+- [x] Translate TS catalog, wrap missing QML visible strings and validate tokens with scripts/check-translations.py.
+- [x] Build Qt QM and run validation, including real QTranslator lookup.
 
 ### Task 2: Build, verify and release portable archive
-- [ ] Add isolated Windows workflow using upstream MSYS2 dependency/build/deploy steps, Linguist tools and Qt translations.
-- [ ] Build application and tests, run CTest, translation checks, Windows startup smoke check, package license/readme/English launcher.
-- [ ] Review diff; push branch, run Actions, inspect output and fix actual failures.
-- [ ] Download verified ZIP, compute SHA256, publish release with explicit validation limits and source link. Read back release assets.
+- [x] Add isolated Windows workflow using upstream MSYS2 dependency/build/deploy steps, Linguist tools and Qt translations.
+- [x] Build application and tests, run CTest, translation checks, Windows startup smoke check, package license/readme/English launcher.
+- [x] Review diff; push branch, run Actions, inspect output and fix actual failures.
+- [x] Download verified ZIP, compute SHA256, publish release with explicit validation limits and source link. Read back release assets.
+
+## Verification receipt
+
+Published v1.10.1-zh.1 from eb0bfa868262e7725c04606d1a1206f4b7f3e861. Windows run 42610581797 succeeded: both CTest suites passed, 122 upstream cases passed with one Windows-prescribed skip, deployed Qt translations and both GUI languages passed, nine distinct settings screenshots inspected. ZIP SHA-256: 7e82d0b9bb4e94d073fcd2bfbfb22adcc170ecc5f06be5b9e1820aee35d42d03. GitHub uploaded asset digest matches.
+
+Resolved findings: persistent mapping keys derived from translated labels; GUI test registration before enable_testing; missing merged Qt catalog loading; toolbar actions clipped at 1024 width; regression fixture missing explicit Settings profile. Narrow-window fixed settings layouts still elide/crop some content and are documented in the release. No real console, PSN, HDR, hardware decoder or controller end-to-end testing.
+
+Release: https://github.com/lwm38741/chiaki-ng/releases/tag/v1.10.1-zh.1
